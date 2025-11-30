@@ -1,4 +1,9 @@
 /* Global styles */
+/* Enable smooth scrolling for in-page anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset some basic elements for consistent styling */
 *,
 *::before,
@@ -66,6 +71,12 @@ body {
     color: #111827;
 }
 
+/* Navigation container (desktop default) */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 /* Navigation links */
 .main-nav a {
     margin-left: 1rem;
@@ -79,6 +90,45 @@ body {
 .main-nav a:hover {
     color: #1d4ed8;
     transform: translateY(-1px);
+}
+
+/* Hamburger button (hidden on desktop by default) */
+.nav-toggle {
+    display: none; /* Will be shown only on smaller screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem;
+    margin-left: auto;
+}
+
+/* Lines of the hamburger icon */
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #111827;
+    border-radius: 999px;
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+/* Optional: change color when menu is open */
+.nav-toggle.nav-open span {
+    background-color: #1d4ed8;
+}
+
+/* Animate hamburger into "X" when open */
+.nav-toggle.nav-open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle.nav-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.nav-open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Hero section */
@@ -180,24 +230,12 @@ body {
     box-shadow: 0 15px 40px -20px rgba(15, 23, 42, 0.7);
 }
 
-.photo-frame img,
-.photo-placeholder {
+.photo-frame img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
     background-color: #0f172a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Placeholder text if there is no image yet */
-.photo-placeholder span {
-    text-align: center;
-    color: #e5e7eb;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
 }
 
 /* Generic section styles */
@@ -344,11 +382,37 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    .main-nav {
-        display: none; /* Simple version without responsive menu */
-    }
-
     .hero {
         padding-top: 2.5rem;
+    }
+
+    /* Show hamburger button on mobile */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Position main navigation as a dropdown menu */
+    .main-nav {
+        position: absolute;
+        top: 64px; /* Same as header height */
+        right: 0;
+        left: 0;
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 0.75rem 1.5rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        box-shadow: 0 12px 24px -20px rgba(15, 23, 42, 0.5);
+    }
+
+    /* Make nav links full-width friendly for tap */
+    .main-nav a {
+        margin: 0.25rem 0;
+        padding: 0.3rem 0;
+    }
+
+    /* When nav has nav-open class, show it */
+    .main-nav.nav-open {
+        display: flex;
     }
 }
