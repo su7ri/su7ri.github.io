@@ -22,6 +22,16 @@
                 <span class="logo-mark">SA</span>
                 <span class="logo-text">Soroush Azari</span>
             </div>
+
+            <!-- Hamburger button for mobile -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <!-- Each span is one line of the hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Main navigation links -->
             <nav class="main-nav">
                 <!-- Navigation links scroll to sections on the same page -->
                 <a href="#about">About</a>
@@ -49,12 +59,9 @@
                 </div>
             </div>
             <div class="hero-photo">
-                <!-- You can place your own image in assets/profile.jpg -->
-                <!-- If you don't have an image yet, you can comment the img tag out -->
                 <div class="photo-frame">
-                    <!-- Example image path: assets/profile.jpg -->
-                    <!-- <img src="assets/profile.jpg" alt="Soroush Azari portrait"> -->
-                    <img src="assets/pro1.jpg" alt="Soroush Azari">
+                    <!-- Profile photo - make sure assets/profile.jpg exists -->
+                    <img src="assets/profile.jpg" alt="Soroush Azari">
                 </div>
             </div>
         </div>
@@ -199,11 +206,34 @@
         </div>
     </footer>
 
-    <!-- Small inline script just to set the current year in the footer -->
+    <!-- Small inline script for footer year and mobile navigation -->
     <script>
         // Set the current year in the footer automatically
-        document.getElementById("year").textContent = new Date().getFullYear();
+        const yearElement = document.getElementById("year");
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        // Mobile navigation toggle (hamburger menu)
+        const navToggle = document.querySelector(".nav-toggle");
+        const mainNav = document.querySelector(".main-nav");
+
+        if (navToggle && mainNav) {
+            navToggle.addEventListener("click", () => {
+                // Toggle class on navigation to show/hide it
+                mainNav.classList.toggle("nav-open");
+                // Toggle class on button for animation
+                navToggle.classList.toggle("nav-open");
+            });
+
+            // Close the menu when a link is clicked (for better UX on mobile)
+            mainNav.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    mainNav.classList.remove("nav-open");
+                    navToggle.classList.remove("nav-open");
+                });
+            });
+        }
     </script>
 </body>
 </html>
-
