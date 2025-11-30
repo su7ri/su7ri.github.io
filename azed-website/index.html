@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soroush Azari | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <!-- Simple text logo, you can replace with an image later -->
+                <span class="logo-mark">SA</span>
+                <span class="logo-text">Soroush Azari</span>
+            </div>
+            <nav class="main-nav">
+                <!-- Navigation links scroll to sections on the same page -->
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section (first big section) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="hero-eyebrow">IT Technician • Data Enthusiast</p>
+                <h1>Hello, I'm <span>Soroush</span>.</h1>
+                <p class="hero-subtitle">
+                    I am an IT technician with 6+ years of experience in IT operations and support,
+                    currently developing my skills in Python, data, and cloud (Azure).
+                </p>
+                <div class="hero-actions">
+                    <!-- These buttons scroll to different sections -->
+                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <!-- You can place your own image in assets/profile.jpg -->
+                <!-- If you don't have an image yet, you can comment the img tag out -->
+                <div class="photo-frame">
+                    <!-- Example image path: assets/profile.jpg -->
+                    <!-- <img src="assets/profile.jpg" alt="Soroush Azari portrait"> -->
+                    <div class="photo-placeholder">
+                        <!-- Placeholder content if you don't have an image yet -->
+                        <span>Photo<br>Coming<br>Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am an IT technician with hands-on experience in troubleshooting hardware,
+                software, and networks, working with Windows Server, Active Directory,
+                Microsoft 365, and cloud services. I recently completed my MSc in Computer Science
+                at the University of Exeter, with a focus on Python and machine learning.
+            </p>
+            <p>
+                I enjoy solving technical problems, learning new technologies, and building
+                clean and simple tools that make users' lives easier. This website is a place
+                to share some of my projects and experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <!-- Each card is one skill category -->
+                <div class="skill-card">
+                    <h3>IT Support & Infrastructure</h3>
+                    <ul>
+                        <li>Windows 10/11, Windows Server</li>
+                        <li>Active Directory, Group Policy</li>
+                        <li>Office 365, Microsoft Teams</li>
+                        <li>Remote support (RDP, TeamViewer)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>CompTIA Network+ certified</li>
+                        <li>TCP/IP, DNS, DHCP, VLANs</li>
+                        <li>Basic routing & switching</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming & Data</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy basics)</li>
+                        <li>Basic data analysis</li>
+                        <li>Working with APIs & scripts</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud & Tools</h3>
+                    <ul>
+                        <li>Learning Microsoft Azure (AZ-900 / AZ-104)</li>
+                        <li>Git & GitHub</li>
+                        <li>Jira / ticketing systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="section-intro">
+                Here are a few examples of my work. I will keep this section updated as I build more projects.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <h3>IT Support Automation Script</h3>
+                    <p>
+                        A Python script to automate basic health checks on Windows machines
+                        (disk usage, running services, event logs) and export a simple report
+                        for the IT team.
+                    </p>
+                    <p class="project-meta">
+                        <span>Tech:</span> Python, PowerShell, Windows
+                    </p>
+                    <!-- Replace # with your GitHub project link when it's ready -->
+                    <a href="#" class="project-link">View on GitHub</a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <h3>Network+ Study Notes</h3>
+                    <p>
+                        Structured notes and diagrams covering the main topics of CompTIA Network+,
+                        turned into a simple website / document to help other learners.
+                    </p>
+                    <p class="project-meta">
+                        <span>Tech:</span> HTML, CSS, Markdown
+                    </p>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <h3>Portfolio Website (This Site)</h3>
+                    <p>
+                        A clean, responsive portfolio built with HTML and CSS, hosted on GitHub Pages
+                        and connected to a custom domain (azed.uk).
+                    </p>
+                    <p class="project-meta">
+                        <span>Tech:</span> HTML, CSS, GitHub Pages
+                    </p>
+                    <a href="#" class="project-link">View Source Code</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                If you would like to talk about an opportunity, collaboration, or just say hi,
+                you can reach me here:
+            </p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a></li>
+                <li><strong>Location:</strong> Exeter, United Kingdom</li>
+                <!-- You can add LinkedIn, GitHub, etc. here -->
+                <!-- <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/...</a></li> -->
+                <!-- <li><strong>GitHub:</strong> <a href="#" target="_blank">github.com/...</a></li> -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© <span id="year"></span> Soroush Azari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Small inline script just to set the current year in the footer -->
+    <script>
+        // Set the current year in the footer automatically
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
