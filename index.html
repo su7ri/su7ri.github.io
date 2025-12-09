@@ -3,202 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soroush Azari | Portfolio</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Main stylesheet -->
+    <title>Soroush Azarinejadianlangroudi | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-mark">SA</span>
-                <span class="logo-text">Soroush Azari</span>
-            </div>
 
-            <!-- Hamburger button for mobile -->
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Main navigation links -->
-            <nav class="main-nav">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Soroush Azarinejadianlangroudi</h1>
+            <h2>Junior Data Analyst | Power BI | SQL | Python</h2>
+            <p>I turn raw data into clear insights, dashboards, and data-driven decisions.  
+               With strong analytical thinking, BI reporting experience, and an IT background,
+               I build solutions that make operations and customer behaviour easy to understand.</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/pro1.jpg" alt="Soroush Azari">
         </div>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <p class="hero-eyebrow">IT Technician • Data Enthusiast</p>
-                <h1>Hello, I'm <span>Soroush</span>.</h1>
-                <p class="hero-subtitle">
-                    I am an IT technician with 6+ years of experience in IT operations and support,
-                    currently developing my skills in Python, data, and cloud (Azure).
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View My Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
-                </div>
-            </div>
+    <!-- FEATURED PROJECT -->
+    <section class="featured-project">
+        <h2>Featured Project: UK Railway Performance Analytics</h2>
+        <p>A full end-to-end analytics project using Power BI, Python, and DAX to explore 
+           operational performance, ticket pricing, customer behaviour, and route insights 
+           across the UK railway network.</p>
 
-            <div class="hero-photo">
-                <div class="photo-frame">
-                    <img src="assets/pro1.jpg" alt="Soroush Azari">
-                </div>
-            </div>
+        <img src="assets/railway_hero.jpg" alt="Railway Dashboard Preview" class="featured-image">
+
+        <div class="project-buttons">
+            <a href="https://github.com/YOUR_GITHUB/uk-railway-data-analytics" target="_blank" class="btn">View on GitHub</a>
+            <a href="report/UK_Railway_Analytics_Final_Report.pdf" target="_blank" class="btn">Download Report (PDF)</a>
+        </div>
+
+        <h3>Main Insights</h3>
+        <ul>
+            <li>86.82% of journeys arrive on time — delays peak at 09:00–09:30.</li>
+            <li>First Class prices are 2× higher than Standard, shaping customer demand.</li>
+            <li>Online sales lead station sales (58.51% vs 41.49%).</li>
+            <li>A few major intercity routes generate most revenue.</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <h2>Other Projects</h2>
+
+        <div class="project-card">
+            <h3>Python System Automation Tools</h3>
+            <p>Collection of Python scripts that automate system checks, log analysis,
+               and routine device management tasks using subprocess and OS libraries.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Network Troubleshooting Toolkit</h3>
+            <p>A lightweight set of scripts and reference materials designed to help 
+               diagnose connectivity issues efficiently (ping tests, DNS checks, routing, etc.).</p>
+        </div>
+
+        <div class="project-card">
+            <h3>IT Infrastructure Notes</h3>
+            <p>Structured notes and summaries covering CompTIA Network+, Windows Server basics,
+               and general infrastructure fundamentals.</p>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am an IT technician with experience in troubleshooting hardware, software,
-                and networks, Active Directory, Microsoft 365 and Windows Server environments.
-                I recently completed my MSc in Computer Science, with a focus on Python,
-                machine learning, and cloud technologies.
-            </p>
-        </div>
-    </section>
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>Skills</h2>
 
-    <!-- Skills -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
+        <div class="skill-list">
+            <div>
+                <h3>Data Analytics</h3>
+                <ul>
+                    <li>Power BI (DAX, data modelling, dashboard design)</li>
+                    <li>Python (pandas, cleaning, preprocessing)</li>
+                    <li>SQL (joins, aggregations, analytics queries)</li>
+                    <li>Data Storytelling & Insight Communication</li>
+                </ul>
+            </div>
 
-                <div class="skill-card">
-                    <h3>IT Support & Infrastructure</h3>
-                    <ul>
-                        <li>Windows 10/11, Windows Server</li>
-                        <li>Active Directory, Group Policy</li>
-                        <li>Office 365, Microsoft Teams</li>
-                        <li>Remote support (RDP, TeamViewer)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Networking</h3>
-                    <ul>
-                        <li>CompTIA Network+ certified</li>
-                        <li>TCP/IP, DNS, DHCP, VLANs</li>
-                        <li>Basic routing & switching</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Programming & Data</h3>
-                    <ul>
-                        <li>Python (Pandas, NumPy basics)</li>
-                        <li>Basic data analysis</li>
-                        <li>API scripting</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Cloud & Tools</h3>
-                    <ul>
-                        <li>Learning Azure (AZ-900 / AZ-104)</li>
-                        <li>Git & GitHub</li>
-                        <li>Jira ticketing systems</li>
-                    </ul>
-                </div>
-
+            <div>
+                <h3>Additional Technical Skills</h3>
+                <ul>
+                    <li>Networking fundamentals (routing, DNS, OSI)</li>
+                    <li>Windows & Linux system administration</li>
+                    <li>Automation scripts</li>
+                    <li>Troubleshooting & incident resolution</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <p class="section-intro">Some examples of my work.</p>
+    <!-- CONTACT -->
+    <footer>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaboration, opportunities, or project discussions.</p>
 
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <h3>IT Support Automation Script</h3>
-                    <p>Python script for health checks on Windows machines.</p>
-                    <p class="project-meta"><span>Tech:</span> Python, PowerShell</p>
-                    <a href="#" class="project-link">View on GitHub</a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Network+ Study Notes</h3>
-                    <p>Organized Network+ diagrams and summaries.</p>
-                    <p class="project-meta"><span>Tech:</span> HTML, CSS</p>
-                    <a href="#" class="project-link">View on GitHub</a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>This website built with HTML & CSS.</p>
-                    <p class="project-meta"><span>Tech:</span> HTML, GitHub Pages</p>
-                    <a href="#" class="project-link">View Source</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2>Contact</h2>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a></li>
-                <li><strong>Location:</strong> Exeter, United Kingdom</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <p>© <span id="year"></span> Soroush Azari</p>
+        <div class="contact-links">
+            <a href="mailto:soroush.azed@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/soroush-azed" target="_blank">LinkedIn</a>
+            <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        // Footer year
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        // Mobile menu logic
-        const navToggle = document.querySelector(".nav-toggle");
-        const nav = document.querySelector(".main-nav");
-
-        navToggle.addEventListener("click", () =>
-        {
-            nav.classList.toggle("nav-open");
-            navToggle.classList.toggle("nav-open");
-        });
-
-        nav.querySelectorAll("a").forEach(link =>
-        {
-            link.addEventListener("click", () =>
-            {
-                nav.classList.remove("nav-open");
-                navToggle.classList.remove("nav-open");
-            });
-        });
-    </script>
-
 </body>
 </html>
-
