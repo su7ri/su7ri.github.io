@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soroush Azarinejadianlangroudi | Data Analyst Portfolio</title>
+    <title>Soroush Azari | Data Analyst Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- NAVIGATION -->
     <header class="site-header">
         <div class="container nav-container">
-
             <div class="logo">
-                <div class="logo-mark">S</div>
-                <div class="logo-text">Soroush</div>
+                <span class="logo-mark">SA</span>
+                <span class="logo-text">Soroush Azari</span>
             </div>
 
-            <button class="nav-toggle" onclick="toggleMenu()">
+            <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
 
-            <nav class="main-nav" id="navMenu">
-                <a href="#projects">Projects</a>
+            <nav class="main-nav">
+                <a href="#about">About</a>
                 <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
-
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero section">
+    <!-- HERO -->
+    <section class="hero">
         <div class="container hero-container">
 
-            <div>
-                <p class="hero-eyebrow">Data Analyst Portfolio</p>
-                <h1>Hi, I'm <span>Soroush</span></h1>
+            <div class="hero-text">
+                <p class="hero-eyebrow">Junior Data Analyst</p>
+                <h1>Hello, I'm <span>Soroush</span>.</h1>
                 <p class="hero-subtitle">
-                    Junior Data Analyst specialising in Power BI, SQL, Python and data storytelling.
-                    I turn raw datasets into clear, actionable insights and dashboards.
+                    A data-driven analyst with a strong foundation in Python, SQL, Power BI, and IT operations.
+                    I transform raw data into insights, dashboards, and clear business recommendations.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#projects" class="btn primary">View My Projects</a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
             </div>
@@ -59,66 +61,22 @@
         </div>
     </section>
 
-    <!-- FEATURED PROJECT -->
-    <section id="projects" class="section-alt section">
+    <!-- ABOUT -->
+    <section id="about" class="section">
         <div class="container">
-
-            <h2>Featured Project: UK Railway Analytics</h2>
+            <h2>About Me</h2>
             <p>
-                A full Power BI analysis exploring operational performance, pricing behaviour,
-                customer trends, and route performance for the UK railway network (Jan–Apr 2024).
+                I am a Junior Data Analyst with a background in IT support and infrastructure.
+                I recently shifted my focus towards data analytics, completing projects using Python,
+                Power BI, DAX, SQL, and data storytelling. My analytical mindset and technical foundation
+                help me solve real business problems through data.
             </p>
-
-            <img src="assets/railway_hero.jpg" alt="Railway Dashboard" style="width:100%; max-width:800px; border-radius:12px; margin:20px 0;">
-
-            <div class="hero-actions">
-                <a href="https://github.com/YOUR_GITHUB/uk-railway-data-analytics" class="btn primary" target="_blank">GitHub Repo</a>
-                <a href="report/UK_Railway_Analytics_Final_Report.pdf" class="btn secondary" target="_blank">Download Report</a>
-            </div>
-
-            <h3 style="margin-top:2rem;">Key Insights</h3>
-            <ul>
-                <li>86.82% of journeys arrive on time — delays peak at 09:00–09:30.</li>
-                <li>First Class prices are more than double Standard.</li>
-                <li>Online ticket sales dominate (58.51%).</li>
-                <li>Revenue is concentrated in major intercity routes.</li>
-            </ul>
-
-        </div>
-    </section>
-
-    <!-- OTHER PROJECTS -->
-    <section class="section">
-        <div class="container">
-
-            <h2>Other Projects</h2>
-
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <h3>Python System Automation Tools</h3>
-                    <p>Automation scripts for system checks, device logs, and maintenance tasks.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Network Troubleshooting Toolkit</h3>
-                    <p>Command-line utilities for DNS, routing, and connectivity diagnostics.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>IT Infrastructure Notes</h3>
-                    <p>Summaries of CompTIA Network+, Windows Server basics, and infrastructure topics.</p>
-                </div>
-
-            </div>
-
         </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section-alt section">
+    <section id="skills" class="section section-alt">
         <div class="container">
-
             <h2>Skills</h2>
 
             <div class="skills-grid">
@@ -126,21 +84,89 @@
                 <div class="skill-card">
                     <h3>Data Analytics</h3>
                     <ul>
-                        <li>Power BI (DAX, data modelling, dashboards)</li>
-                        <li>SQL (joins, aggregations, analytical queries)</li>
-                        <li>Python (pandas and preprocessing)</li>
+                        <li>Power BI (DAX, Modelling, Dashboards)</li>
+                        <li>SQL (joins, aggregations)</li>
+                        <li>Python (Pandas, preprocessing)</li>
+                        <li>Data Cleaning & Wrangling</li>
                         <li>Data Storytelling</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Technical Skills</h3>
+                    <h3>Programming & Tools</h3>
                     <ul>
-                        <li>Windows & Linux</li>
-                        <li>Networking fundamentals</li>
-                        <li>Troubleshooting & automation</li>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>API scripting</li>
                     </ul>
                 </div>
+
+                <div class="skill-card">
+                    <h3>IT & Infrastructure</h3>
+                    <ul>
+                        <li>Active Directory, Group Policy</li>
+                        <li>Microsoft 365 Admin</li>
+                        <li>Windows Server, Linux basics</li>
+                        <li>RDP & Remote troubleshooting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>CompTIA Network+ certified</li>
+                        <li>TCP/IP, DNS, DHCP</li>
+                        <li>Basic routing & switching</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <!-- FEATURED PROJECT -->
+            <article class="project-card">
+                <h3>UK Railway Analytics Dashboard (FEATURED)</h3>
+                <p>
+                    A full end-to-end data analytics project analysing 31,000+ UK rail journeys (Jan–Apr 2024)
+                    using Power BI, DAX, and Python. Includes operational KPIs, pricing insights,
+                    customer behaviour, and route performance.
+                </p>
+
+                <p class="project-meta"><span>Tech:</span> Power BI, DAX, Python, SQL</p>
+
+                <a href="https://github.com/YOUR_GITHUB/uk-railway-data-analytics"
+                   class="project-link" target="_blank">View on GitHub</a>
+                <br>
+                <a href="report/UK_Railway_Analytics_Final_Report.pdf"
+                   class="project-link" target="_blank">Download Report</a>
+            </article>
+
+            <!-- OTHER PROJECTS -->
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Python System Automation Script</h3>
+                    <p>Automated health check and diagnostics tool for Windows-based systems.</p>
+                    <p class="project-meta"><span>Tech:</span> Python</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Network+ Study Notes</h3>
+                    <p>Structured diagrams and notes summarising CompTIA Network+ concepts.</p>
+                    <p class="project-meta"><span>Tech:</span> HTML, CSS</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>This website created using HTML, CSS, and GitHub Pages deployment.</p>
+                    <p class="project-meta"><span>Tech:</span> HTML, CSS, GitHub</p>
+                </article>
 
             </div>
 
@@ -148,31 +174,40 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
         <div class="container">
-
             <h2>Contact</h2>
-
             <ul class="contact-list">
-                <li>Email: <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/soroush-azed">linkedin.com/in/soroush-azed</a></li>
-                <li>GitHub: <a href="https://github.com/YOUR_GITHUB">github.com/YOUR_GITHUB</a></li>
+                <li><strong>Email:</strong> <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a></li>
+                <li><strong>Location:</strong> Exeter, United Kingdom</li>
             </ul>
-
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
-        <p>© 2025 Soroush Azarinejadianlangroudi</p>
+        <div class="container footer-container">
+            <p>© <span id="year"></span> Soroush Azari</p>
+        </div>
     </footer>
 
     <script>
-        function toggleMenu() {
-            const nav = document.getElementById("navMenu");
-            const btn = document.querySelector(".nav-toggle");
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const navToggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".main-nav");
+
+        navToggle.addEventListener("click", () => {
             nav.classList.toggle("nav-open");
-            btn.classList.toggle("nav-open");
-        }
+            navToggle.classList.toggle("nav-open");
+        });
+
+        nav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("nav-open");
+                navToggle.classList.remove("nav-open");
+            });
+        });
     </script>
 
 </body>
