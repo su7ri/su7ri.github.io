@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soroush Azari | Data Analyst Portfolio</title>
+    <title>Soroush Azed | Data Analyst Portfolio</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- Header -->
     <header class="site-header">
         <div class="container nav-container">
+
+            <!-- NEW HEADER NAME -->
             <div class="logo">
                 <span class="logo-mark">SA</span>
-                <span class="logo-text">Soroush Azari</span>
+                <span class="logo-text">Soroush Azed</span>
             </div>
 
             <button class="nav-toggle" aria-label="Toggle navigation">
@@ -28,11 +35,12 @@
             <nav class="main-nav">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Project</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
+
 
     <!-- HERO -->
     <section class="hero">
@@ -41,42 +49,48 @@
             <div class="hero-text">
                 <p class="hero-eyebrow">Junior Data Analyst</p>
                 <h1>Hello, I'm <span>Soroush</span>.</h1>
+
                 <p class="hero-subtitle">
-                    A data-driven analyst with a strong foundation in Python, SQL, Power BI, and IT operations.
-                    I transform raw data into insights, dashboards, and clear business recommendations.
+                    A data analyst specialising in Power BI, SQL, Python and data storytelling.  
+                    I transform raw datasets into clear dashboards, insights, and business decisions.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="#projects" class="btn primary">View Project</a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
             </div>
 
             <div class="hero-photo">
                 <div class="photo-frame">
-                    <img src="assets/pro1.jpg" alt="Soroush Azari">
+                    <img src="assets/pro1.jpg" alt="Soroush Azed">
                 </div>
             </div>
 
         </div>
     </section>
 
+
     <!-- ABOUT -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
+
             <p>
-                I am a Junior Data Analyst with a background in IT support and infrastructure.
-                I recently shifted my focus towards data analytics, completing projects using Python,
-                Power BI, DAX, SQL, and data storytelling. My analytical mindset and technical foundation
-                help me solve real business problems through data.
+                I am a Junior Data Analyst with a background in IT support and infrastructure.  
+                My work focuses on transforming data into meaningful insights using Power BI, Python,
+                SQL, and modern analytical techniques.  
+                I enjoy building dashboards, discovering patterns, and explaining insights clearly.
             </p>
+
         </div>
     </section>
+
 
     <!-- SKILLS -->
     <section id="skills" class="section section-alt">
         <div class="container">
+
             <h2>Skills</h2>
 
             <div class="skills-grid">
@@ -86,9 +100,9 @@
                     <ul>
                         <li>Power BI (DAX, Modelling, Dashboards)</li>
                         <li>SQL (joins, aggregations)</li>
-                        <li>Python (Pandas, preprocessing)</li>
-                        <li>Data Cleaning & Wrangling</li>
+                        <li>Python (Pandas, cleaning)</li>
                         <li>Data Storytelling</li>
+                        <li>Business Reporting</li>
                     </ul>
                 </div>
 
@@ -104,10 +118,10 @@
                 <div class="skill-card">
                     <h3>IT & Infrastructure</h3>
                     <ul>
-                        <li>Active Directory, Group Policy</li>
-                        <li>Microsoft 365 Admin</li>
-                        <li>Windows Server, Linux basics</li>
-                        <li>RDP & Remote troubleshooting</li>
+                        <li>Windows & Linux</li>
+                        <li>Active Directory</li>
+                        <li>Microsoft 365</li>
+                        <li>Remote Troubleshooting</li>
                     </ul>
                 </div>
 
@@ -116,7 +130,6 @@
                     <ul>
                         <li>CompTIA Network+ certified</li>
                         <li>TCP/IP, DNS, DHCP</li>
-                        <li>Basic routing & switching</li>
                     </ul>
                 </div>
 
@@ -124,70 +137,65 @@
         </div>
     </section>
 
-    <!-- PROJECTS -->
+
+    <!-- FEATURED PROJECT ONLY -->
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
 
-            <!-- FEATURED PROJECT -->
+            <h2>Featured Project</h2>
+
             <article class="project-card">
-                <h3>UK Railway Analytics Dashboard (FEATURED)</h3>
+
+                <h3>UK Railway Analytics Dashboard</h3>
+
                 <p>
-                    A full end-to-end data analytics project analysing 31,000+ UK rail journeys (Jan–Apr 2024)
-                    using Power BI, DAX, and Python. Includes operational KPIs, pricing insights,
-                    customer behaviour, and route performance.
+                    A full data analytics project analysing 31,000+ UK rail journeys  
+                    using Power BI, DAX, Python and data storytelling.  
+                    Includes operational KPIs, pricing trends, customer behaviour,  
+                    and route performance insights.
                 </p>
+
+                <!-- PROJECT IMAGE -->
+                <img src="assets/railway_hero.png"
+                     alt="Railway Dashboard"
+                     style="width:100%; max-width:800px; border-radius:12px; margin:20px 0;">
 
                 <p class="project-meta"><span>Tech:</span> Power BI, DAX, Python, SQL</p>
 
-                <a href="https://github.com/YOUR_GITHUB/uk-railway-data-analytics"
+                <a href="https://github.com/su7ri/uk-railway-data-analytics" 
                    class="project-link" target="_blank">View on GitHub</a>
+
                 <br>
+
                 <a href="report/UK_Railway_Analytics_Final_Report.pdf"
                    class="project-link" target="_blank">Download Report</a>
+
             </article>
-
-            <!-- OTHER PROJECTS -->
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <h3>Python System Automation Script</h3>
-                    <p>Automated health check and diagnostics tool for Windows-based systems.</p>
-                    <p class="project-meta"><span>Tech:</span> Python</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Network+ Study Notes</h3>
-                    <p>Structured diagrams and notes summarising CompTIA Network+ concepts.</p>
-                    <p class="project-meta"><span>Tech:</span> HTML, CSS</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>This website created using HTML, CSS, and GitHub Pages deployment.</p>
-                    <p class="project-meta"><span>Tech:</span> HTML, CSS, GitHub</p>
-                </article>
-
-            </div>
 
         </div>
     </section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="section section-alt">
         <div class="container">
+
             <h2>Contact</h2>
+
             <ul class="contact-list">
                 <li><strong>Email:</strong> <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a></li>
-                <li><strong>Location:</strong> Exeter, United Kingdom</li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/soroush-azed" target="_blank">linkedin.com/in/soroush-azed</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/su7ri" target="_blank">github.com/su7ri</a></li>
             </ul>
+
         </div>
     </section>
+
 
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container footer-container">
-            <p>© <span id="year"></span> Soroush Azari</p>
+            <p>© <span id="year"></span> Soroush Azed</p>
         </div>
     </footer>
 
