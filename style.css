@@ -235,6 +235,38 @@ body {
     margin: 20px 0;
 }
 
+/* Project links with icons */
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.project-link-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.project-link-icon i {
+    font-size: 22px;
+    margin-right: 8px;
+    color: #0f172a;
+    transition: 0.2s ease;
+}
+
+.project-link-icon:hover {
+    color: #1e40af;
+}
+
+.project-link-icon:hover i {
+    color: #1e40af;
+}
+
 /* Contact List */
 .contact-list {
     list-style: none;
