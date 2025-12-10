@@ -121,7 +121,7 @@
                     <ul>
                         <li><i class="ri-pie-chart-2-fill"></i> Dashboard Layout & UX</li>
                         <li><i class="ri-slideshow-2-line"></i> KPI Development</li>
-                        <li><i class="ri-line-chart-line"></i> Trend & pattern analysis</li>
+                        <li><i class="ri-line-chart-line"></i> Trend & Pattern Analysis</li>
                         <li><i class="ri-flow-chart"></i> Data Modelling</li>
                     </ul>
                 </div>
@@ -169,15 +169,26 @@
                      alt="Railway Dashboard"
                      class="project-image">
 
-                <p class="project-meta"><span>Tech:</span> Power BI, DAX, Python, SQL</p>
+                <div class="project-links">
 
-                <a href="railway.html" class="project-link">Open Project Page</a> <br>
+                    <a href="railway.html" class="project-link-icon" target="_blank">
+                        <i class="ri-slideshow-2-line"></i>
+                        <span>Open Project Page</span>
+                    </a>
 
-                <a href="https://github.com/su7ri/uk-railway-data-analytics"
-                   class="project-link" target="_blank">GitHub Repository</a> <br>
+                    <a href="https://github.com/su7ri/uk-railway-data-analytics"
+                       class="project-link-icon" target="_blank">
+                        <i class="ri-github-fill"></i>
+                        <span>GitHub Repository</span>
+                    </a>
 
-                <a href="https://azed.uk/UK_Railway_Analytics_Final_Report.pdf"
-                   class="project-link" target="_blank">Download Report</a>
+                    <a href="https://azed.uk/UK_Railway_Analytics_Final_Report.pdf"
+                       class="project-link-icon" target="_blank">
+                        <i class="ri-file-pdf-2-line"></i>
+                        <span>Download Report (PDF)</span>
+                    </a>
+
+                </div>
 
             </article>
 
@@ -234,8 +245,7 @@
         });
 
         nav.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () =>
-            {
+            link.addEventListener("click", () => {
                 nav.classList.remove("nav-open");
                 navToggle.classList.remove("nav-open");
             });
@@ -244,7 +254,3 @@
 
 </body>
 </html>
-
-
-
-
