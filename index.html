@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
     <!-- HEADER -->
@@ -37,10 +36,9 @@
             <nav class="main-nav">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Project</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
 
-                <!-- HEADER SOCIAL ICONS -->
                 <a href="https://github.com/su7ri" target="_blank" class="nav-icon">
                     <i class="ri-github-fill"></i>
                 </a>
@@ -51,7 +49,6 @@
 
         </div>
     </header>
-
 
     <!-- HERO -->
     <section class="hero">
@@ -67,7 +64,7 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View Project</a>
+                    <a href="#projects" class="btn primary">View Projects</a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
             </div>
@@ -81,21 +78,17 @@
         </div>
     </section>
 
-
     <!-- ABOUT -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-
             <p>
                 I am a Junior Data Analyst focused on transforming raw data into clear and actionable insights.
                 I work with Power BI, SQL, Python, and visual storytelling to analyse performance, identify patterns,
-                and communicate insights that help teams make data-driven decisions.
+                and communicate insights that support data-driven decision-making.
             </p>
-
         </div>
     </section>
-
 
     <!-- SKILLS -->
     <section id="skills" class="section section-alt">
@@ -109,8 +102,8 @@
                     <h3>Data Analytics</h3>
                     <ul>
                         <li><i class="ri-bar-chart-2-line"></i> Power BI (DAX, Modelling, Dashboards)</li>
-                        <li><i class="ri-database-2-line"></i> SQL (joins, filtering, aggregations)</li>
-                        <li><i class="ri-file-code-line"></i> Python (Pandas, cleaning, preprocessing)</li>
+                        <li><i class="ri-database-2-line"></i> SQL (Joins, Filtering, Aggregations)</li>
+                        <li><i class="ri-file-code-line"></i> Python (Pandas, Data Cleaning)</li>
                         <li><i class="ri-search-eye-line"></i> Exploratory Data Analysis (EDA)</li>
                         <li><i class="ri-lightbulb-line"></i> Data Storytelling</li>
                     </ul>
@@ -148,53 +141,74 @@
         </div>
     </section>
 
-
-    <!-- PROJECT -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
         <div class="container">
 
-            <h2>Featured Project</h2>
+            <h2>Featured Projects</h2>
 
+            <!-- UK Railway Project -->
             <article class="project-card">
-
                 <h3>UK Railway Analytics Dashboard</h3>
 
                 <p>
-                    A full analytics project analysing 31,000+ UK rail journeys.
-                    Includes operational KPIs, pricing trends, customer behaviour,
-                    and route performance using Power BI, SQL, Python, and DAX.
+                    An end-to-end analytics project analysing UK rail journeys.
+                    Covers operational performance, pricing trends, customer behaviour,
+                    and route-level insights using SQL, Python, and Power BI.
                 </p>
 
                 <img src="assets/railway_hero.png"
-                     alt="Railway Dashboard"
+                     alt="UK Railway Dashboard"
                      class="project-image">
 
                 <div class="project-links">
-
-                    <a href="railway.html" class="project-link-icon" target="_blank">
+                    <a href="railway.html" class="project-link-icon" target="_blank" rel="noopener noreferrer">
                         <i class="ri-slideshow-2-line"></i>
                         <span>Open Project Page</span>
                     </a>
 
                     <a href="https://github.com/su7ri/uk-railway-data-analytics"
-                       class="project-link-icon" target="_blank">
+                       class="project-link-icon"
+                       target="_blank"
+                       rel="noopener noreferrer">
                         <i class="ri-github-fill"></i>
                         <span>GitHub Repository</span>
                     </a>
+                </div>
+            </article>
 
-                    <a href="https://azed.uk/UK_Railway_Analytics_Final_Report.pdf"
-                       class="project-link-icon" target="_blank">
-                        <i class="ri-file-pdf-2-line"></i>
-                        <span>Download Report (PDF)</span>
+            <!-- Credit Risk Project -->
+            <article class="project-card">
+                <h3>Credit Risk Analytics & Policy Scenario Analysis</h3>
+
+                <p>
+                    An end-to-end credit risk analytics project focused on customer risk segmentation,
+                    behavioural drivers of default, and policy-driven scenario analysis using SQL,
+                    Python, and Power BI.
+                </p>
+
+                <img src="assets/credit_risk_hero.png"
+                     alt="Credit Risk Dashboard"
+                     class="project-image">
+
+                <div class="project-links">
+                    <a href="credit-risk.html" class="project-link-icon" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-slideshow-2-line"></i>
+                        <span>Open Project Page</span>
                     </a>
 
+                    <a href="https://github.com/su7ri/home_credit"
+                       class="project-link-icon"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="ri-github-fill"></i>
+                        <span>GitHub Repository</span>
+                    </a>
                 </div>
-
             </article>
 
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section id="contact" class="section section-alt">
@@ -203,7 +217,6 @@
             <h2>Contact</h2>
 
             <ul class="contact-list">
-
                 <li>
                     <i class="ri-mail-line contact-icon"></i>
                     <a href="mailto:soroush.azed@gmail.com">soroush.azed@gmail.com</a>
@@ -211,19 +224,21 @@
 
                 <li>
                     <i class="ri-linkedin-box-fill contact-icon linkedin"></i>
-                    <a href="https://linkedin.com/in/soroush-azed" target="_blank">linkedin.com/in/soroush-azed</a>
+                    <a href="https://linkedin.com/in/soroush-azed" target="_blank">
+                        linkedin.com/in/soroush-azed
+                    </a>
                 </li>
 
                 <li>
                     <i class="ri-github-fill contact-icon"></i>
-                    <a href="https://github.com/su7ri" target="_blank">github.com/su7ri</a>
+                    <a href="https://github.com/su7ri" target="_blank">
+                        github.com/su7ri
+                    </a>
                 </li>
-
             </ul>
 
         </div>
     </section>
-
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -231,7 +246,6 @@
             <p>© <span id="year"></span> Soroush Azed</p>
         </div>
     </footer>
-
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
