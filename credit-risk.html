@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit Risk Analytics | Project by Soroush Azed</title>
+    <title>Credit Risk Analytics | Soroush Azed</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,71 +14,45 @@
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
-    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
     <div class="container nav-container">
-
         <div class="logo">
             <span class="logo-mark">SA</span>
             <span class="logo-text">Soroush Azed</span>
         </div>
 
-        <button class="nav-toggle" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-        </button>
+        <button class="nav-toggle"><span></span><span></span><span></span></button>
 
         <nav class="main-nav">
             <a href="index.html">Home</a>
             <a href="index.html#projects">Projects</a>
             <a href="index.html#skills">Skills</a>
             <a href="index.html#contact">Contact</a>
-
-            <a href="https://github.com/su7ri" target="_blank" class="nav-icon">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="https://linkedin.com/in/soroush-azed" target="_blank" class="nav-icon">
-                <i class="ri-linkedin-box-fill"></i>
-            </a>
+            <a href="https://github.com/su7ri" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://linkedin.com/in/soroush-azed" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
         </nav>
-
     </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
     <div class="container hero-container">
-
         <div class="hero-text">
             <p class="hero-eyebrow">SQL • Python • Power BI • DAX</p>
-
-            <h1>
-                Credit Risk Analytics<br>
-                <span>& Policy Scenario Analysis</span>
-            </h1>
-
+            <h1>Credit Risk Analytics<br><span>& Policy Scenario Analysis</span></h1>
             <p class="hero-subtitle">
-                An end-to-end credit risk analytics project analysing customer behaviour,
-                affordability indicators, and policy trade-offs using SQL, Python, and Power BI.
+                End-to-end credit risk analytics focusing on customer behaviour,
+                affordability indicators, and policy trade-offs.
             </p>
 
             <div class="hero-actions">
-                <a href="https://github.com/su7ri/home_credit"
-                   target="_blank"
-                   class="btn primary">
-                    GitHub Repo
-                </a>
-
-                <a href="Credit_Risk_Analysis_Report.pdf"
-                   target="_blank"
-                   class="btn secondary">
-                    View Report (PDF)
-                </a>
+                <a href="https://github.com/su7ri/home_credit" class="btn primary" target="_blank">GitHub Repo</a>
+                <a href="Credit_Risk_Analysis_Report.pdf" class="btn secondary" target="_blank">View Full Report</a>
             </div>
         </div>
 
@@ -87,133 +61,136 @@
                 <img src="assets/credit.png" alt="Credit Risk Dashboard">
             </div>
         </div>
-
     </div>
 </section>
 
-<!-- PROJECT OVERVIEW -->
+<!-- OVERVIEW -->
 <section class="section">
     <div class="container">
         <h2>Project Overview</h2>
-
         <p>
-            This project analyses consumer credit risk at a portfolio level, with the goal of
-            identifying high-risk customer segments and evaluating how credit policy decisions
-            impact approval volumes and default rates.
+            This project analyses consumer credit risk at a portfolio level to identify
+            high-risk customer segments and quantify how credit policy decisions impact
+            approval volumes and default outcomes.
         </p>
-
         <p>
-            The workflow follows a SQL-first approach for data preparation and feature engineering,
+            A SQL-first workflow was used for data preparation and feature engineering,
             followed by exploratory analysis and interactive dashboard development in Power BI.
         </p>
     </div>
 </section>
 
-<!-- ANALYTICAL APPROACH -->
+<!-- KPI SNAPSHOT -->
 <section class="section section-alt">
     <div class="container">
-        <h2>Analytical Approach</h2>
+        <h2>KPI Snapshot</h2>
 
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <h4>Default Rate</h4>
+                <p>~8%</p>
+                <span>Portfolio risk health</span>
+            </div>
+
+            <div class="kpi-card">
+                <h4>High-Risk Segments</h4>
+                <p>~35%</p>
+                <span>Risk concentration</span>
+            </div>
+
+            <div class="kpi-card">
+                <h4>CTI Trade-off</h4>
+                <p>Approvals ↑ / Risk ↑</p>
+                <span>Policy optimisation</span>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Behavioural Risk</h4>
+                <p>Refusals ↑ defaults</p>
+                <span>Decision feature</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANALYTICAL APPROACH -->
+<section class="section">
+    <div class="container">
+        <h2>Analytical Approach</h2>
         <ul class="contact-list">
-            <li>
-                <i class="ri-database-2-line contact-icon"></i>
-                SQL joins and aggregations to construct a customer-level analytical dataset
-            </li>
-            <li>
-                <i class="ri-tools-line contact-icon"></i>
-                Feature engineering of affordability and behavioural risk indicators
-            </li>
-            <li>
-                <i class="ri-search-eye-line contact-icon"></i>
-                Exploratory analysis to validate risk patterns and segment behaviour
-            </li>
-            <li>
-                <i class="ri-slideshow-2-line contact-icon"></i>
-                Policy-driven scenario analysis using credit-to-income (CTI) thresholds
-            </li>
+            <li><i class="ri-database-2-line"></i> SQL joins & aggregations for customer-level datasets</li>
+            <li><i class="ri-tools-line"></i> Feature engineering of affordability & behavioural indicators</li>
+            <li><i class="ri-search-eye-line"></i> Exploratory analysis & validation</li>
+            <li><i class="ri-slideshow-2-line"></i> Policy-driven scenario analysis using CTI thresholds</li>
         </ul>
     </div>
 </section>
 
 <!-- DASHBOARDS -->
-<section class="section">
+<section class="section section-alt">
     <div class="container">
-
         <h2>Dashboard Highlights</h2>
 
         <h3>Executive Risk Overview</h3>
-        <p>
-            Portfolio-level view of default rates, risk concentration, and key affordability metrics.
-        </p>
-        <img src="assets/home_credit-1.png" class="project-image" alt="Executive Risk Overview">
+        <img src="assets/home_credit-1.png" class="project-image">
 
         <h3>Customer Risk Segmentation</h3>
-        <p>
-            Segment-level analysis highlighting elevated default risk by age, income, and prior refusals.
-        </p>
-        <img src="assets/home_credit-2.png" class="project-image" alt="Customer Risk Segmentation">
+        <img src="assets/home_credit-2.png" class="project-image">
 
         <h3>Policy & Scenario Analysis</h3>
-        <p>
-            Evaluation of approval–risk trade-offs under varying credit-to-income (CTI) thresholds.
-        </p>
-        <img src="assets/home_credit-3.png" class="project-image" alt="Policy Scenario Analysis">
-
+        <img src="assets/home_credit-3.png" class="project-image">
     </div>
 </section>
 
-<!-- KEY INSIGHTS -->
-<section class="section section-alt">
+<!-- INSIGHTS -->
+<section class="section">
     <div class="container">
-        <h2>Key Insights</h2>
-
+        <h2>Key Insights & Decisions</h2>
         <ul class="contact-list">
-            <li>
-                <i class="ri-arrow-right-circle-line contact-icon"></i>
-                Aggregate portfolio metrics conceal concentrated risk within specific customer segments
-            </li>
-            <li>
-                <i class="ri-arrow-right-circle-line contact-icon"></i>
-                Younger customers in lower income bands exhibit disproportionately higher default risk
-            </li>
-            <li>
-                <i class="ri-arrow-right-circle-line contact-icon"></i>
-                Previous credit refusals are a strong behavioural predictor of future default
-            </li>
-            <li>
-                <i class="ri-arrow-right-circle-line contact-icon"></i>
-                Relaxing CTI thresholds increases approvals but accelerates default risk beyond optimal levels
-            </li>
+            <li><i class="ri-arrow-right-circle-line"></i> Portfolio averages hide concentrated segment-level risk</li>
+            <li><i class="ri-arrow-right-circle-line"></i> Younger, lower-income customers drive disproportionate defaults</li>
+            <li><i class="ri-arrow-right-circle-line"></i> Previous refusals strongly predict future default risk</li>
+            <li><i class="ri-arrow-right-circle-line"></i> CTI relaxation yields diminishing returns beyond optimal levels</li>
         </ul>
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- SQL PROOF -->
+<section class="section section-alt">
+    <div class="container">
+        <h2>SQL Feature Engineering Example</h2>
+
+<pre><code>
+SELECT
+  age_band,
+  income_band,
+  COUNT(*) AS applications,
+  SUM(CASE WHEN default_flag = 1 THEN 1 ELSE 0 END) AS defaults,
+  ROUND(
+    SUM(CASE WHEN default_flag = 1 THEN 1 ELSE 0 END)::DECIMAL
+    / COUNT(*) * 100, 2
+  ) AS default_rate
+FROM credit_applications
+GROUP BY age_band, income_band
+ORDER BY default_rate DESC;
+</code></pre>
+
+        <p>
+            This query underpins segment-level default analysis used to evaluate
+            credit policy decisions.
+        </p>
+    </div>
+</section>
+
 <footer class="site-footer">
-    <div class="container footer-container">
+    <div class="container">
         <p>© <span id="year"></span> Soroush Azed</p>
     </div>
 </footer>
 
 <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const navToggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".main-nav");
-
-    navToggle.addEventListener("click", () => {
-        nav.classList.toggle("nav-open");
-        navToggle.classList.toggle("nav-open");
-    });
-
-    nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("nav-open");
-            navToggle.classList.remove("nav-open");
-        });
-    });
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
-
