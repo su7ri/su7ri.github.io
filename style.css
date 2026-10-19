@@ -345,3 +345,8 @@ body {
         margin: 0 auto;
     }
 }
+
+/* Code blocks scroll instead of widening the page on small screens */
+pre {
+    overflow-x: auto;
+}
